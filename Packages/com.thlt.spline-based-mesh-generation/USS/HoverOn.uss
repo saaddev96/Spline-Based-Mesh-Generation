@@ -1,0 +1,33 @@
+.MouseOn {
+    bottom: auto;
+    top: auto;
+    margin-left: 14px;
+}
+
+.MouseOn:checked {
+    -unity-background-image-tint-color: rgb(0, 255, 242);
+    transition-timing-function: ease-in;
+    transition-duration: 1s;
+}
+
+.MouseOn:hover {
+    scale: 1.05 1.05;
+    transition-delay: 0s;
+    transition-duration: 0.2s;
+}
+
+.MouseOn:active {
+    transition-timing-function: ease-out;
+    transition-duration: 0s;
+    scale: 1 1;
+    transition-delay: 0s;
+    transition-property: all;
+    transform-origin: center;
+    border-left-color: rgba(0, 255, 67, 0);
+    border-right-color: rgba(0, 255, 67, 0);
+    border-top-color: rgba(0, 255, 67, 0);
+    border-bottom-color: rgba(0, 255, 67, 0);
+    background-color: rgb(136, 255, 249);
+    -unity-background-image-tint-color: rgb(0, 255, 242);
+    -unity-background-scale-mode: stretch-to-fill;
+}

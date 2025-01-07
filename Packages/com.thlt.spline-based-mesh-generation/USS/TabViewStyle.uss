@@ -1,0 +1,144 @@
+#TabView #unity-tab-view__header-container {
+    align-items: stretch;
+    flex-direction: row;
+    align-self: stretch;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    -unity-text-align: upper-left;
+    background-color: rgba(60, 60, 60, 0.13);
+    -unity-background-image-tint-color: rgb(60, 60, 60);
+    justify-content: space-evenly;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-left-color: rgba(222, 222, 222, 0);
+    border-right-color: rgba(222, 222, 222, 0);
+    border-top-color: rgba(222, 222, 222, 0);
+    border-bottom-color: rgba(222, 222, 222, 0);
+}
+
+#TabView #unity-tab__header {
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    font-size: 20px;
+    -unity-font-style: bold;
+    flex-direction: row;
+    background-position-x: left 0;
+    overflow: visible;
+    align-items: center;
+    justify-content: space-evenly;
+    align-self: stretch;
+    -unity-background-scale-mode: stretch-to-fill;
+    -unity-slice-scale: 1px;
+    background-position-y: top 0;
+    text-overflow: clip;
+    margin-top: 0;
+    margin-right: 20px;
+    margin-bottom: 0;
+    margin-left: 20px;
+    align-content: center;
+    -unity-text-align: upper-left;
+    padding-right: 20px;
+    padding-left: 20px;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+}
+
+#TabView #unity-tab__header:checked {
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    background-color: rgba(255, 255, 255, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    font-size: 20px;
+    -unity-font-style: bold;
+    flex-direction: row;
+    background-position-x: left 0;
+    overflow: visible;
+    align-items: center;
+    justify-content: space-evenly;
+    align-self: stretch;
+    -unity-background-scale-mode: stretch-to-fill;
+    -unity-slice-scale: 1px;
+    background-position-y: top 0;
+    text-overflow: clip;
+    margin-top: 0;
+    margin-right: 20px;
+    margin-bottom: 0;
+    margin-left: 20px;
+    align-content: center;
+    -unity-text-align: upper-left;
+    padding-right: 20px;
+    padding-left: 20px;
+    -unity-background-image-tint-color: rgb(0, 237, 255);
+    transition-timing-function: ease-in-out;
+    scale: 1.2 1.2;
+    transition-duration: 0.3s;
+    color: rgb(166, 166, 166);
+}
+
+#RadioButtons #unity-radio-button-group__container {
+    flex-direction: row;
+    align-items: stretch;
+    align-self: stretch;
+    justify-content: space-around;
+    scale: 1 1;
+}
+
+#DrawingModeBtn #unity-toggle-button-group__container {
+    justify-content: space-evenly;
+    align-self: center;
+    align-items: center;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+
+#RadioButtons #unity-checkmark {
+}
+
+#Vertices #unity-content {
+    margin-top: 6px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+#UField #unity-text-input {
+    background-size: 100% 100%;
+    justify-content: space-evenly;
+    align-items: stretch;
+    align-self: stretch;
+    align-content: auto;
+    height: auto;
+    width: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding-left: 0;
+    margin-left: 15px;
+    padding-top: 0;
+    padding-right: 0;
+    margin-right: 265px;
+    flex-direction: column;
+}
