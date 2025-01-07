@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using JetBrains.Annotations;
 using THLT.SplineMeshGeneration.Scripts.Scriptables;
 using THLT.SplineMeshGeneration.Scripts.VisualElements;
@@ -44,7 +45,8 @@ namespace THLT.SplineMeshGeneration.Scripts.Editor
         private readonly Color _inactiveColor = new (0, 0, 0,0.25f);
         
         private const string WARNING_ESCAPE_SEQUENCE = "\u26a0\ufe0f";
-        private const string ASSETS_PATH = "Assets/THLT/SplineMeshGeneration/2DMeshes";
+        private const string Mesh2DPath= "Assets/2DMeshes";
+        private  string Created2DMeshPath;
         
         [MenuItem("THLT/Spline-based Mesh Generation/2D Mesh Drawer")]
         public static void Create()
@@ -191,6 +193,12 @@ namespace THLT.SplineMeshGeneration.Scripts.Editor
         }
         void GenericShapeCreator<T>() where T : BaseMesh
         {
+            Created2DMeshPath = Path.Combine(Application.dataPath,"2DMeshes");
+            if (!Directory.Exists(Created2DMeshPath))
+            {
+                Directory.CreateDirectory(Created2DMeshPath);
+                AssetDatabase.Refresh();
+            }
             var mesh2d = CreateInstance<T>();
             var indices = new int[]{};
             var previousShapeVertCount = 0;
@@ -231,8 +239,8 @@ namespace THLT.SplineMeshGeneration.Scripts.Editor
                 indices = indices.Concat(shapeIndices).ToArray();
             }
             mesh2d.indices = indices;
-            var guids2 = AssetDatabase.FindAssets($"{_shapeNameTextField.value}", new[] {ASSETS_PATH});
-            var path = $"{ASSETS_PATH}/{_shapeNameTextField.value}-{guids2.Length}.asset";
+            var guids2 = AssetDatabase.FindAssets($"{_shapeNameTextField.value}", new[] {Mesh2DPath});
+            var path = $"{Mesh2DPath}/{_shapeNameTextField.value}-{guids2.Length}.asset";
             
             AssetDatabase.CreateAsset(mesh2d,path);
             AssetDatabase.Refresh();
