@@ -24,13 +24,11 @@
     "email": "saaddev96@gmail.com",
     "url": "https://www.di3i.com"
   },
-  {
     "samples": [
         {
             "displayName": "Demo Scene",
             "description": "Contains sample shaders for the High Definition render pipeline",
-            "path": "Samples~/SamplesDemo"
+            "path": "Samples~/Samples Demo"
         }
     ]
-}
 }
