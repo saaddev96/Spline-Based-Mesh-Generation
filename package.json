@@ -24,11 +24,11 @@
     "email": "saaddev96@gmail.com",
     "url": "https://www.di3i.com"
   },
-    "samples": [
+  "samples": [
   {
-    "displayName": "Demo Scene",
-    "description": "spline based Mesh Generation demo scene",
-    "path": "Samples~/SamplesDemo"
+       "displayName": "Demo Scene",
+            "description": "Contains sample shaders for the High Definition render pipeline",
+            "path": "Samples~/SamplesDemo"
   }
 ]
 }
