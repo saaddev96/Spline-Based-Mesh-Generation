@@ -23,5 +23,12 @@
     "name": "dilite said",
     "email": "saaddev96@gmail.com",
     "url": "https://www.di3i.com"
+  },
+    "samples": [
+  {
+    "displayName": "Demo Scene",
+    "description": "spline based Mesh Generation demo scene",
+    "path": "Samples~/SamplesDemo"
   }
+]
 }
