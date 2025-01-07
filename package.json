@@ -14,6 +14,16 @@
     "com.unity.collections": "2.5.1",
     "com.unity.probuilder": "6.0.4"
   },
+  {
+	  "samples": [
+        {
+            "displayName": "Demo Scene",
+            "description": " Demo scene for spline based mesh generation",
+            "path": "Samples~/Sample Demo"
+        }
+		
+	]
+  },
   "keywords": [
     "splines",
     "tool",
