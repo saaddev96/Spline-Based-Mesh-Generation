@@ -15,6 +15,8 @@ namespace THLT.SplineMeshGeneration.Scripts.Editor
         private VisualElement _root;
         private TreeView _splineTreeView;
         private static Mesh _knotMesh;
+        
+        private const string KotMeshPath= "Packages/com.thlt.spline-based-mesh-generation/Meshes/Knot.fbx";
         private static void Print(object msg) => Debug.Log(msg);
         private static void PrintError(object msg) => Debug.LogError(msg);
         
@@ -46,7 +48,7 @@ namespace THLT.SplineMeshGeneration.Scripts.Editor
         
         private void OnEnable()
         { 
-            _knotMesh = AssetDatabase.LoadAssetAtPath<Mesh>("Assets/THLT/SplineMeshGeneration/Meshes/Knot.fbx");
+            _knotMesh = AssetDatabase.LoadAssetAtPath<Mesh>(KotMeshPath);
             SceneView.duringSceneGui += EditorUpdate;
         }
  

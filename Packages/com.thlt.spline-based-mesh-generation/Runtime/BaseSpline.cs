@@ -27,10 +27,13 @@ namespace THLT.SplineMeshGeneration.Scripts
         [SerializeField] [HideInInspector] protected Vector2 tiling = Vector2.one;
         [SerializeField] [HideInInspector] protected float radius = 0.5f;
         [SerializeField] [HideInInspector] protected CommandInvoker splineCommandInvoker;
+        
         protected Vector3? SelectedCurrentPos;
         protected Quaternion? SelectedCurrentRot;
-        // Private Fields
         
+        protected const string HandleTexturePath= "Packages/com.thlt.spline-based-mesh-generation/UI/Handle.png";
+        protected const string KnotCenterTexturePath= "Packages/com.thlt.spline-based-mesh-generation/UI/knotCenter.png";
+     
         // Max Distance between two Knots to merge
         public  float KnotMaxDistance { get; set; }= 1f; 
 

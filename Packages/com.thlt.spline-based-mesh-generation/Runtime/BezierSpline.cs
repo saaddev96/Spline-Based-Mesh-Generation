@@ -15,9 +15,9 @@ namespace THLT.SplineMeshGeneration.Scripts
         {
             Selection.selectionChanged += HandlerSelected;
             handleTexture ??=
-                AssetDatabase.LoadAssetAtPath<Texture2D>("Assets/THLT/SplineMeshGeneration/UI/Handle.png");
+                AssetDatabase.LoadAssetAtPath<Texture2D>(HandleTexturePath);
             knotCenterTexture ??=
-                AssetDatabase.LoadAssetAtPath<Texture2D>("Assets/THLT/SplineMeshGeneration/UI/knotCenter.png");
+                AssetDatabase.LoadAssetAtPath<Texture2D>(KnotCenterTexturePath);
             SetHandleIcons();
             InitSetup();
             GenerateMesh();
