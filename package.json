@@ -14,7 +14,6 @@
     "com.unity.collections": "2.5.1",
     "com.unity.probuilder": "6.0.4"
   },
-  {
 	  "samples": [
         {
             "displayName": "Demo Scene",
@@ -23,7 +22,7 @@
         }
 		
 	]
-  },
+  ,
   "keywords": [
     "splines",
     "tool",
