@@ -44,6 +44,9 @@ The **Spline Based Mesh Generator** is a Unity tool that allows you to generate 
    - Go to the **Editor** tab.
    - Select a vertex, and the vertex number will appear above. Set the corresponding `U` value.  
    - The `V` values are generated automatically along the spline, but you can control the tiling later in the spline editor.
+     
+     ![Tool Usage Image](./Documentation/Images/uvs.png)
+     
 6. **Shape Creation**: Choose a name for the shape and click **Create**. The shape will be generated as a `ScriptableObject` asset in the `2DMeshes` folder in your project’s Asset directory.
 
 ![Tool Usage GIF](./Documentation/Images/ShapeDrawer.gif)
