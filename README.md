@@ -71,4 +71,4 @@ The **Spline Based Mesh Generator** is a Unity tool that allows you to generate 
 
 
 ## License
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+This project is licensed under the MIT License. See [LICENSE](./LICENSE.md) for details.
