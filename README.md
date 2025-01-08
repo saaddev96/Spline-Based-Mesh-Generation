@@ -14,7 +14,7 @@ The **Spline Based Mesh Generator** is a Unity tool that allows you to generate 
 - Control UV tiling for precise texture mapping.
 
 ## Installation
-1. Copy the [Release Link](https://github.com/saaddev96/Spline-Based-Mesh-Generation.git?path=/Assets). 
+1. Copy the `https://github.com/saaddev96/Spline-Based-Mesh-Generation.git?path=/Assets`. 
 2. Navigate to Package Manager `Window > Package Manager`.
    1. Click + on the top left .
    3. Click on install package from git url.
