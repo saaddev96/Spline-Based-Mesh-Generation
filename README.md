@@ -35,22 +35,29 @@ The **Spline Based Mesh Generator** is a Unity tool that allows you to generate 
 > ⚠️ **Warning**: The shape's points/vertices must be drawn **clockwise**.
 
 1. **Open the 2D Mesh Drawer**: Navigate to `THLT > Spline-based Mesh Generation > 2D Mesh Drawer` in the Unity Editor.
-2. **Create the Shape**: Use the vertex tool to create points that will represent the cross-section of your mesh. Each point represents two vertices.
-3. **Define Normals**: Use the normals tool. To define a normal:
+2. **Choose Shape Type**: Choose shape type from the drop down.
+*Always disable unused shapes to ensure a clean and organized shape creation process.*
+4. **Add Shape**: Click the + button to add new shape.
+5. **Create the Shape**: Use the vertex tool to create points that will represent the cross-section of your mesh. Each point represents two vertices.
+
+> ⚠️ **Warning**: Make sure to select the target shape before defining the normal , to select just scoll to the shape you want and click on it**.
+
+5. **Define Normals**: Use the normals tool. To define a normal:
    - Click the **Left Mouse Button (LMB)** on a point and drag to set the first vertex's normal.
    - Click a second time to select the other vertex and drag to set its normal.
-4. **Check Normals**: Each point has two vertices, each with its own normal. Be careful not to mix up the normals. Scroll down to the target shape, and use the selection tool to check if the normals are set correctly.
-5. **Define UVs**:
+6. **Check Normals**: Each point has two vertices, each with its own normal. Be careful not to mix up the normals. Scroll down to the target shape, and use the selection tool to check if the normals are set correctly.
+7. **Define UVs**:
    - Go to the **Editor** tab.
    - Select a vertex, and the vertex number will appear above. Set the corresponding `U` value.  
    - The `V` values are generated automatically along the spline, but you can control the tiling later in the spline editor.
      
      ![Tool Usage Image](./Documentation/Images/uvs.png)
      
-6. **Shape Creation**: Choose a name for the shape and click **Create**. The shape will be generated as a `ScriptableObject` asset in the `2DMeshes` folder in your project’s Asset directory.
+8. **Shape Creation**: Choose a name for the shape and click **Create**. The shape will be generated as a `ScriptableObject` asset in the `2DMeshes` folder in your project’s Asset directory.
 
 ![Tool Usage GIF](./Documentation/Images/ShapeDrawer.gif)
 *Preview of the tool in the Unity Editor.*
+
 ### Using 2D Shape
 
 1. **Splines Editor**: Navigate to `THLT > Spline-based Mesh Generation > Splines` in the Unity Editor.
