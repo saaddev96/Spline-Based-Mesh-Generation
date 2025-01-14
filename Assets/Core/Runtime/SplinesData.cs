@@ -39,6 +39,7 @@ namespace THLT.SplineMeshGeneration.Scripts
                 foreach (var spline in Splines)
                 {
                     spline.Sample();
+                    spline.MSpline.OnDeactive();
                 }
                 ChangeActiveSpline(Splines[0]);
             
