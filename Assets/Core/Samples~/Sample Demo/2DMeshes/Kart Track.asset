@@ -1,0 +1,263 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 462993d7054b123408984b3fbf1e6367, type: 3}
+  m_Name: Kart Track
+  m_EditorClassIdentifier: 
+  indices: 07000000000000000100000002000000030000000400000005000000060000001100000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001900000012000000130000001400000015000000160000001700000018000000230000001a0000001b0000001c0000001d0000001e0000001f0000002000000021000000220000002b0000002400000025000000260000002700000028000000290000002a000000330000002c0000002d0000002e0000002f0000003000000031000000320000003b0000003400000035000000360000003700000038000000390000003a000000
+  mesh2dData:
+  - vertsData:
+    - point: {x: -24, y: -1}
+      normal: {x: 0, y: -1}
+      u: 1
+      index: 0
+    - point: {x: -24, y: -1}
+      normal: {x: -1, y: 0}
+      u: 0.7
+      index: 1
+    - point: {x: -24, y: 1}
+      normal: {x: -1, y: 0}
+      u: 1
+      index: 2
+    - point: {x: -24, y: 1}
+      normal: {x: 0, y: 1}
+      u: 1
+      index: 3
+    - point: {x: -16, y: 1}
+      normal: {x: 0, y: 1}
+      u: 0.5
+      index: 4
+    - point: {x: -16, y: 1}
+      normal: {x: 1, y: 0}
+      u: 1
+      index: 5
+    - point: {x: -16, y: -1}
+      normal: {x: 1, y: 0}
+      u: 0.7
+      index: 6
+    - point: {x: -16, y: -1}
+      normal: {x: 0, y: -1}
+      u: 0.5
+      index: 7
+  - vertsData:
+    - point: {x: -16, y: -1}
+      normal: {x: 0, y: -1}
+      u: 0.17
+      index: 0
+    - point: {x: -16, y: -1}
+      normal: {x: -1, y: 0}
+      u: 0
+      index: 1
+    - point: {x: -16, y: 2}
+      normal: {x: -1, y: 0}
+      u: 0.17
+      index: 2
+    - point: {x: -16, y: 2}
+      normal: {x: 0, y: 1}
+      u: 0
+      index: 3
+    - point: {x: -13, y: 2}
+      normal: {x: 0, y: 1}
+      u: 0.15
+      index: 4
+    - point: {x: -13, y: 2}
+      normal: {x: 0.70710677, y: 0.70710677}
+      u: 0.15
+      index: 5
+    - point: {x: -12, y: 1}
+      normal: {x: 0.70710677, y: 0.70710677}
+      u: 0.17
+      index: 6
+    - point: {x: -12, y: 1}
+      normal: {x: 1, y: 0}
+      u: 0.17
+      index: 7
+    - point: {x: -12, y: -1}
+      normal: {x: 1, y: 0}
+      u: 0
+      index: 8
+    - point: {x: -12, y: -1}
+      normal: {x: 0, y: -1}
+      u: 0
+      index: 9
+  - vertsData:
+    - point: {x: -12, y: -1}
+      normal: {x: 0, y: -1}
+      u: 0.5
+      index: 0
+    - point: {x: -12, y: -1}
+      normal: {x: -1, y: 0}
+      u: 0.17
+      index: 1
+    - point: {x: -12, y: 1}
+      normal: {x: -1, y: 0}
+      u: 0.29
+      index: 2
+    - point: {x: -12, y: 1}
+      normal: {x: 0, y: 1}
+      u: 0.17
+      index: 3
+    - point: {x: 12, y: 1}
+      normal: {x: 0, y: 1}
+      u: 0.5
+      index: 4
+    - point: {x: 12, y: 1}
+      normal: {x: 1, y: 0}
+      u: 0.5
+      index: 5
+    - point: {x: 12, y: -1}
+      normal: {x: 1, y: 0}
+      u: 0.38
+      index: 6
+    - point: {x: 12, y: -1}
+      normal: {x: 0, y: -1}
+      u: 0.17
+      index: 7
+  - vertsData:
+    - point: {x: 12, y: -1}
+      normal: {x: 0, y: -1}
+      u: 0.17
+      index: 0
+    - point: {x: 12, y: -1}
+      normal: {x: -1, y: 0}
+      u: 0
+      index: 1
+    - point: {x: 12, y: 1}
+      normal: {x: -1, y: 0}
+      u: 0.15
+      index: 2
+    - point: {x: 12, y: 1}
+      normal: {x: -0.70710677, y: 0.70710677}
+      u: 0.15
+      index: 3
+    - point: {x: 13, y: 2}
+      normal: {x: -0.70710677, y: 0.70710677}
+      u: 0.168
+      index: 4
+    - point: {x: 13, y: 2}
+      normal: {x: 0, y: 1}
+      u: 0.168
+      index: 5
+    - point: {x: 16, y: 2}
+      normal: {x: 0, y: 1}
+      u: 0.03
+      index: 6
+    - point: {x: 16, y: 2}
+      normal: {x: 1, y: 0}
+      u: 0
+      index: 7
+    - point: {x: 16, y: -1}
+      normal: {x: 1, y: 0}
+      u: 0.17
+      index: 8
+    - point: {x: 16, y: -1}
+      normal: {x: 0, y: -1}
+      u: 0
+      index: 9
+  - vertsData:
+    - point: {x: 16, y: -1}
+      normal: {x: 0, y: -1}
+      u: 0.5
+      index: 0
+    - point: {x: 16, y: -1}
+      normal: {x: -1, y: 0}
+      u: 1
+      index: 1
+    - point: {x: 16, y: 1}
+      normal: {x: -1, y: 0}
+      u: 0.7
+      index: 2
+    - point: {x: 16, y: 1}
+      normal: {x: 0, y: 1}
+      u: 0.5
+      index: 3
+    - point: {x: 24, y: 1}
+      normal: {x: 0, y: 1}
+      u: 1
+      index: 4
+    - point: {x: 24, y: 1}
+      normal: {x: 1, y: 0}
+      u: 1
+      index: 5
+    - point: {x: 24, y: -1}
+      normal: {x: 1, y: 0}
+      u: 0.7
+      index: 6
+    - point: {x: 24, y: -1}
+      normal: {x: 0, y: -1}
+      u: 1
+      index: 7
+  - vertsData:
+    - point: {x: -17, y: 1}
+      normal: {x: 0, y: -1}
+      u: 0.2
+      index: 0
+    - point: {x: -17, y: 1}
+      normal: {x: -1, y: 0}
+      u: 0
+      index: 1
+    - point: {x: -17, y: 19}
+      normal: {x: -1, y: 0}
+      u: 1
+      index: 2
+    - point: {x: -17, y: 19}
+      normal: {x: 0, y: 1}
+      u: 0
+      index: 3
+    - point: {x: -16, y: 19}
+      normal: {x: 0, y: 1}
+      u: 0.2
+      index: 4
+    - point: {x: -16, y: 19}
+      normal: {x: 1, y: 0}
+      u: 1
+      index: 5
+    - point: {x: -16, y: 1}
+      normal: {x: 1, y: 0}
+      u: 0
+      index: 6
+    - point: {x: -16, y: 1}
+      normal: {x: 0, y: -1}
+      u: 0
+      index: 7
+  - vertsData:
+    - point: {x: 16, y: 1}
+      normal: {x: 0, y: -1}
+      u: 0.2
+      index: 0
+    - point: {x: 16, y: 1}
+      normal: {x: -1, y: 0}
+      u: 0
+      index: 1
+    - point: {x: 16, y: 19}
+      normal: {x: -1, y: 0}
+      u: 1
+      index: 2
+    - point: {x: 16, y: 19}
+      normal: {x: 0, y: 1}
+      u: 0
+      index: 3
+    - point: {x: 17, y: 19}
+      normal: {x: 0, y: 1}
+      u: 0.2
+      index: 4
+    - point: {x: 17, y: 19}
+      normal: {x: 1, y: 0}
+      u: 1
+      index: 5
+    - point: {x: 17, y: 1}
+      normal: {x: 1, y: 0}
+      u: 0
+      index: 6
+    - point: {x: 17, y: 1}
+      normal: {x: 0, y: -1}
+      u: 0
+      index: 7

@@ -1,0 +1,162 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c72b5089d60bee42b89ae97759bdfb6, type: 3}
+  m_Name: Slider
+  m_EditorClassIdentifier: 
+  indices: 23000000000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000
+  mesh2dData:
+  - vertsData:
+    - point: {x: -1, y: 1.4}
+      normal: {x: 0.8574929, y: 0.5144958}
+      u: 0
+      index: 0
+    - point: {x: -1, y: 1.4}
+      normal: {x: 0.8574929, y: 0.5144958}
+      u: 0
+      index: 1
+    - point: {x: -0.87, y: 0.9}
+      normal: {x: 0.6203376, y: 0.7843349}
+      u: 0
+      index: 2
+    - point: {x: -0.87, y: 0.9}
+      normal: {x: 0.6203376, y: 0.7843349}
+      u: 0
+      index: 3
+    - point: {x: -0.5, y: 0.53}
+      normal: {x: 0.32201818, y: 0.9467335}
+      u: 0
+      index: 4
+    - point: {x: -0.5, y: 0.53}
+      normal: {x: 0.32201818, y: 0.9467335}
+      u: 0
+      index: 5
+    - point: {x: 0, y: 0.4}
+      normal: {x: 0, y: 1}
+      u: 0
+      index: 6
+    - point: {x: 0, y: 0.4}
+      normal: {x: 0, y: 1}
+      u: 0
+      index: 7
+    - point: {x: 0.5, y: 0.53}
+      normal: {x: -0.32201818, y: 0.9467335}
+      u: 0
+      index: 8
+    - point: {x: 0.5, y: 0.53}
+      normal: {x: -0.32201818, y: 0.9467335}
+      u: 0
+      index: 9
+    - point: {x: 0.87, y: 0.9}
+      normal: {x: -0.6203376, y: 0.7843349}
+      u: 0
+      index: 10
+    - point: {x: 0.87, y: 0.9}
+      normal: {x: -0.6203376, y: 0.7843349}
+      u: 0
+      index: 11
+    - point: {x: 1, y: 1.4}
+      normal: {x: -0.8574929, y: 0.5144958}
+      u: 0
+      index: 12
+    - point: {x: 1, y: 1.4}
+      normal: {x: -0.8574929, y: 0.5144958}
+      u: 0
+      index: 13
+    - point: {x: 1.1, y: 1.55}
+      normal: {x: -0.6043865, y: 0.7966913}
+      u: 0
+      index: 14
+    - point: {x: 1.1, y: 1.55}
+      normal: {x: -0.6043865, y: 0.7966913}
+      u: 0
+      index: 15
+    - point: {x: 1.3, y: 1.55}
+      normal: {x: 0.4347491, y: 0.9005517}
+      u: 0
+      index: 16
+    - point: {x: 1.3, y: 1.55}
+      normal: {x: 0.4347491, y: 0.9005517}
+      u: 0
+      index: 17
+    - point: {x: 1.4, y: 1.4}
+      normal: {x: 0.9363292, y: 0.35112345}
+      u: 0
+      index: 18
+    - point: {x: 1.4, y: 1.4}
+      normal: {x: 0.9363292, y: 0.35112345}
+      u: 0
+      index: 19
+    - point: {x: 1.218, y: 0.7}
+      normal: {x: 0.7235583, y: -0.6902633}
+      u: 0
+      index: 20
+    - point: {x: 1.218, y: 0.7}
+      normal: {x: 0.7235583, y: -0.6902633}
+      u: 0
+      index: 21
+    - point: {x: 0.7, y: 0.182}
+      normal: {x: 0.72547174, y: -0.6882519}
+      u: 0
+      index: 22
+    - point: {x: 0.7, y: 0.182}
+      normal: {x: 0.72547174, y: -0.6882519}
+      u: 0
+      index: 23
+    - point: {x: 0, y: 0}
+      normal: {x: 0, y: -1}
+      u: 0
+      index: 24
+    - point: {x: 0, y: 0}
+      normal: {x: 0, y: -1}
+      u: 0
+      index: 25
+    - point: {x: -0.7, y: 0.182}
+      normal: {x: -0.5118299, y: -0.8590868}
+      u: 0
+      index: 26
+    - point: {x: -0.7, y: 0.182}
+      normal: {x: -0.5118299, y: -0.8590868}
+      u: 0
+      index: 27
+    - point: {x: -1.218, y: 0.7}
+      normal: {x: -0.7235583, y: -0.6902633}
+      u: 0
+      index: 28
+    - point: {x: -1.218, y: 0.7}
+      normal: {x: -0.7235583, y: -0.6902633}
+      u: 0
+      index: 29
+    - point: {x: -1.4, y: 1.4}
+      normal: {x: -0.9363292, y: 0.35112345}
+      u: 0
+      index: 30
+    - point: {x: -1.4, y: 1.4}
+      normal: {x: -0.9363292, y: 0.35112345}
+      u: 0
+      index: 31
+    - point: {x: -1.3, y: 1.55}
+      normal: {x: -0.4347491, y: 0.9005517}
+      u: 0
+      index: 32
+    - point: {x: -1.3, y: 1.55}
+      normal: {x: -0.4347491, y: 0.9005517}
+      u: 0
+      index: 33
+    - point: {x: -1.1, y: 1.55}
+      normal: {x: 0.6043865, y: 0.7966913}
+      u: 0
+      index: 34
+    - point: {x: -1.1, y: 1.55}
+      normal: {x: 0.6043865, y: 0.7966913}
+      u: 0
+      index: 35
+  closedCaps: 0

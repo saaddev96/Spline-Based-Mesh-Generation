@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c72b5089d60bee42b89ae97759bdfb6, type: 3}
+  m_Name: Pipe
+  m_EditorClassIdentifier: 
+  indices: 0f000000000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e000000
+  mesh2dData:
+  - vertsData:
+    - point: {x: 1, y: -0}
+      normal: {x: 0.31622776, y: -0.94868326}
+      u: 0.8
+      index: 0
+    - point: {x: 1, y: -0}
+      normal: {x: 0.31622776, y: -0.94868326}
+      u: 0
+      index: 1
+    - point: {x: -1, y: -0}
+      normal: {x: -0.31622776, y: -0.94868326}
+      u: 0.1
+      index: 2
+    - point: {x: -1, y: -0}
+      normal: {x: -0.31622776, y: -0.94868326}
+      u: 0.1
+      index: 3
+    - point: {x: -3, y: 2}
+      normal: {x: -0.96152395, y: -0.27472112}
+      u: 0.2
+      index: 4
+    - point: {x: -3, y: 2}
+      normal: {x: -0.96152395, y: -0.27472112}
+      u: 0.2
+      index: 5
+    - point: {x: -3, y: 4}
+      normal: {x: -0.96152395, y: 0.27472112}
+      u: 0.3
+      index: 6
+    - point: {x: -3, y: 4}
+      normal: {x: -0.96152395, y: 0.27472112}
+      u: 0.3
+      index: 7
+    - point: {x: -1, y: 6}
+      normal: {x: -0.37139067, y: 0.9284767}
+      u: 0.4
+      index: 8
+    - point: {x: -1, y: 6}
+      normal: {x: -0.37139067, y: 0.9284767}
+      u: 0.4
+      index: 9
+    - point: {x: 1, y: 6}
+      normal: {x: 0.37139067, y: 0.9284767}
+      u: 0.5
+      index: 10
+    - point: {x: 1, y: 6}
+      normal: {x: 0.37139067, y: 0.9284767}
+      u: 0.5
+      index: 11
+    - point: {x: 3, y: 4}
+      normal: {x: 0.8320503, y: 0.5547002}
+      u: 0.6
+      index: 12
+    - point: {x: 3, y: 4}
+      normal: {x: 0.8320503, y: 0.5547002}
+      u: 0.6
+      index: 13
+    - point: {x: 3, y: 2}
+      normal: {x: 0.91914505, y: -0.3939193}
+      u: 0.7
+      index: 14
+    - point: {x: 3, y: 2}
+      normal: {x: 0.91914505, y: -0.3939193}
+      u: 0.7
+      index: 15
+  closedCaps: 0
