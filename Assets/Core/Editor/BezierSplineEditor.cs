@@ -61,6 +61,10 @@ namespace THLT.SplineMeshGeneration.Scripts.Editor
             SceneView.duringSceneGui -= EditorUpdate;  
             EditorSceneManager.sceneOpened -= OnSceneOpened;
             SplinesData.ChangeActiveSpline(null);
+            foreach (var spline in Splines)
+            {
+                spline.MSpline.OnDeactive();
+            }
         }
         private void OnSceneOpened(Scene scene, OpenSceneMode mode)
         {
