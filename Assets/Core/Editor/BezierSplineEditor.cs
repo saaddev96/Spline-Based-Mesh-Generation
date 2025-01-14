@@ -53,7 +53,7 @@ namespace THLT.SplineMeshGeneration.Scripts.Editor
         { 
             _knotMesh = AssetDatabase.LoadAssetAtPath<Mesh>("Packages/com.thlt.spline-based-mesh-generation/Meshes/Knot.fbx");
             SceneView.duringSceneGui += EditorUpdate;
-     
+            GizmoUtility.use3dIcons = false;
         }
   
         private void OnDisable()  
