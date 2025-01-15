@@ -35,7 +35,7 @@ The **Spline Based Mesh Generator** is a Unity tool that allows you to generate 
 > ⚠️ **Warning**: The shape's points/vertices must be drawn **clockwise**.
 
 1. **Open the 2D Mesh Drawer**: Navigate to `THLT > Spline-based Mesh Generation > 2D Mesh Drawer` in the Unity Editor.
-2. **Choose Shape Type**: Choose shape type from the drop down.
+2. **Shape Type**: Choose shape type from the drop down.
 *Always disable unused shapes to ensure a clean and organized shape creation process.*
 4. **Add Shape**: Click the + button to add new shape.
 5. **Create the Shape**: Use the vertex tool to create points that will represent the cross-section of your mesh. Each point represents two vertices.
@@ -76,6 +76,84 @@ The **Spline Based Mesh Generator** is a Unity tool that allows you to generate 
 - Pipes or tubular structures.
 - Custom rails and tracks.
 
+## Contributing
+
+We welcome contributions to this Unity project! Whether it's fixing bugs, adding new features, or improving the documentation, your help is appreciated. Please follow these steps to ensure a smooth contribution process.
+
+### 1. Prerequisites
+- **Unity Version**: Ensure you have the correct Unity Editor version installed. This project uses **Unity [6000.0.23f1]**. You can download it via [Unity Hub](https://unity.com/).
+- **Dependencies**: Unity automatically manages most dependencies through the `Packages/manifest.json` file.
+
+### 2. Getting Started
+1. **Fork and Clone the Repository**  
+   - Fork this repository to your own GitHub account.  
+   - Clone your forked repository to your local machine:  
+     ```bash
+     git clone https://github.com/saaddev96/Spline-Based-Mesh-Generation.git
+     ```
+
+2. **Open the Project in Unity**  
+   - Launch Unity Hub.  
+   - Click **Open** and navigate to the folder where you cloned the repository.  
+   - Select the project and let Unity load it. This may take a few minutes if the project has many dependencies.
+
+### 3. Making Changes
+
+1. **Create a New Branch**  
+   Create a new branch for your feature or bug fix:
+   ```bash
+   git checkout -b feature/your-feature-name
+    ```
+2.**Make Your Changes** 
+   Make your changes in the Unity Editor. Be mindful of:
+     - Minimizing changes to unrelated files (Unity sometimes modifies .meta files unnecessarily).
+     - Following the project's coding and asset organization standards.
+3.**Test Your Changes** 
+  - Playtest your changes in the Unity Editor.
+  - Ensure no new errors or warnings are introduced.
+  - Verify that your changes integrate seamlessly into the project.
+
+4.**Commit Your Changes** 
+  Commit your changes with a clear and descriptive message:
+  ```bash
+  git commit -m "Describe your changes clearly"
+  ```
+
+### 4. Submit a Pull Request
+
+1. **Push Your Branch**
+   Push your branch to your forked repository:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+2. **Create a Pull Request**
+   - Go to the original repository and click New Pull Request.
+   - Select your branch and provide a detailed description of your changes, including:
+      - What problem does it solve?
+      - How did you implement the solution?
+      - Any relevant screenshots or links.
+   
+### 4. Additional Notes for Unity Projects
+
+**Scene Management:**
+If you modify or add scenes:
+
+   - Clearly describe the changes in your pull request.
+   - Ensure no unnecessary scene changes are included.
+
+**Assets and Prefabs:**
+Avoid modifying shared assets or prefabs unless required.
+Always double-check prefab overrides.
+
+**Packages:**
+If you add a new package via Unity Package Manager, include the changes to the Packages/manifest.json file in your commit.
+
+**Testing:**
+Provide any test files or instructions required to verify your changes. This includes:
+
+   - Example scenes.
+   - Test scripts.
+   - Any additional setup instructions.
 
 ## License
 This project is licensed under the MIT License. See [LICENSE](./LICENSE.md) for details.
