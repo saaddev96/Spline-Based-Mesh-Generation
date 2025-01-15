@@ -36,17 +36,20 @@ namespace THLT.SplineMeshGeneration.Scripts
             Splines = Object.FindObjectsByType<Spline>(FindObjectsSortMode.None).OrderBy(x => x.gameObject.name).ToList();
             if (Splines.Count > 0)
             {
-                foreach (var spline in Splines)
-                {
-                    spline.Sample();
-                    spline.MSpline.OnDeactive();
-                }
+                SampleAllSplines();
                 ChangeActiveSpline(Splines[0]);
             
             }
             else
             {
                 ChangeActiveSpline(null); 
+            }
+        }
+        static void SampleAllSplines()
+        {
+            foreach (var spline in Splines)
+            {
+                spline.Sample();
             }
         }
         public static void ChangeActiveSpline(Spline newSpline)

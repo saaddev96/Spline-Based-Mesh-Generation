@@ -65,6 +65,7 @@ namespace THLT.SplineMeshGeneration.Scripts
             knotCenter.gameObject.RemoveIcon();
             leftHandle.gameObject.RemoveIcon();
             rightHandle.gameObject.RemoveIcon(); 
+            EditorUtility.SetDirty(knotCenter);
         }
         public void DestroyObjects()
         {
