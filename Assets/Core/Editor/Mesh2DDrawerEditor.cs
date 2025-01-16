@@ -196,6 +196,7 @@ namespace THLT.SplineMeshGeneration.Scripts.Editor
             if (!Directory.Exists(folderPath))
             {
                 Directory.CreateDirectory(folderPath);
+                AssetDatabase.Refresh();
             }
             var mesh2d = CreateInstance<T>();
             var indices = new int[]{};
@@ -246,8 +247,7 @@ namespace THLT.SplineMeshGeneration.Scripts.Editor
  
         void CreateShape()
         {
-           
-        
+            
             switch (_graphViewController.SelectedShapeType)
             {
                 case ShapeTypes.Single:
