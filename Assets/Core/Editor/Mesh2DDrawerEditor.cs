@@ -45,7 +45,7 @@ namespace THLT.SplineMeshGeneration.Scripts.Editor
         private readonly Color _inactiveColor = new (0, 0, 0,0.25f);
         
         private const string WARNING_ESCAPE_SEQUENCE = "\u26a0\ufe0f";
-        private const string ASSETS_PATH = "Assets/THLT/SplineMeshGeneration/2DMeshes";
+        private const string ASSETS_PATH = "Assets/2DMeshes";
         
         [MenuItem("THLT/Spline-based Mesh Generation/2D Mesh Drawer")]
         public static void Create()
@@ -192,6 +192,11 @@ namespace THLT.SplineMeshGeneration.Scripts.Editor
         }
         void GenericShapeCreator<T>() where T : BaseMesh
         {
+            var folderPath = Path.Combine(Application.dataPath, "2DMeshes");
+            if (!Directory.Exists(folderPath))
+            {
+                Directory.CreateDirectory(folderPath);
+            }
             var mesh2d = CreateInstance<T>();
             var indices = new int[]{};
             var previousShapeVertCount = 0;
@@ -238,23 +243,7 @@ namespace THLT.SplineMeshGeneration.Scripts.Editor
             AssetDatabase.CreateAsset(mesh2d,path);
             AssetDatabase.Refresh();
         }
-        // [MenuItem("Tools/Write Angles")]
-        // static void WriteString()
-        // {
-        //     string path = "Assets/test.txt";
-        //     var pointCount = 13;
-        //     //Write some text to the test.txt file
-        //     StreamWriter writer = new StreamWriter(path,true);
-        //     for (int i = 0; i < pointCount; i++)
-        //     {
-        //         var TAU = Mathf.PI * 2;
-        //         var turn = i / (pointCount - 1f);
-        //         var angle = turn * TAU;
-        //         var direction = new Vector2(Mathf.Cos(angle), Mathf.Sin(angle));
-        //         writer.WriteLine($"\n {direction}");
-        //     }
-        //     writer.Close();
-        // }
+ 
         void CreateShape()
         {
            
