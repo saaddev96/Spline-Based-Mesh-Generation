@@ -16,7 +16,7 @@ The **Spline Based Mesh Generator** is a Unity tool that allows you to generate 
 ## Installation
 1. Copy the link
 ```bash
-https://github.com/saaddev96/Spline-Based-Mesh-Generation.git?path=/Assets/Core`.
+https://github.com/saaddev96/Spline-Based-Mesh-Generation.git?path=/Assets/Core
 ```
 4. Navigate to Package Manager `Window > Package Manager`.
    1. Click + on the top left .
