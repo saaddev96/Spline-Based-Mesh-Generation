@@ -6,7 +6,7 @@
 ## Overview
 The **Spline Based Mesh Generator** is a Unity tool that allows you to generate procedural meshes by extending 2D shapes along a Bezier spline. It provides an intuitive editor for defining 2D shapes with control over vertex positions, normals, and UV mapping.
 
-[Tool Preview GIF](./Documentation/Images/Preview.gif)
+![Tool Usage GIF](./Documentation/Images/Preview.gif)
 *Preview of the tool in the Unity Editor.*
 
 ### Key Features
