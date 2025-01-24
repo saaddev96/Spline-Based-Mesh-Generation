@@ -143,12 +143,13 @@ namespace THLT.SplineMeshGeneration.Scripts
         }
         public override  void UpdateCreatedHandlesPos(Event e)
         {
+            if(!(Knots.Count>0)) return;
             if(e is null) throw new NullReferenceException("input Event is null");
             var ray = HandleUtility.GUIPointToWorldRay(e.mousePosition);
-            if (!Physics.Raycast(ray, out RaycastHit hit)) return;
+            var point = Physics.Raycast(ray, out RaycastHit hit,CastMaxDistance) ? hit.point : ray.GetPoint(CastMaxDistance);
             var knt = Knots[^1];
             Selection.activeTransform = knt.rightHandle;
-            knt.rightHandle.position = hit.point;
+            knt.rightHandle.position = point;
             Sample();
         }
 

@@ -31,7 +31,7 @@ namespace THLT.SplineMeshGeneration.Scripts.Editor
         private static void DrawSpline(ISpline spline) 
         {
             if (spline is not { CanDrawSpline: true } || spline.Knots.Count < 2) return;
-            Handles.color = Color.cyan;
+            Handles.color = Color.magenta;
             Vector3[] points = new Vector3[spline.Data.Count];
             for (int i = 0; i < spline.Data.Count; i++)
             {

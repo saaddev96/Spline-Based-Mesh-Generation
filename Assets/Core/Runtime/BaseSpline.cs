@@ -33,6 +33,7 @@ namespace THLT.SplineMeshGeneration.Scripts
         
         // Max Distance between two Knots to merge
         public  float KnotMaxDistance { get; set; }= 1f; 
+        public float  CastMaxDistance { get; set; } = 100f;
 
         [FormerlySerializedAs("_meshFilter")] [SerializeField]
         [HideInInspector] protected MeshFilter meshFilter;

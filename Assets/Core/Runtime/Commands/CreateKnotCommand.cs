@@ -17,8 +17,7 @@ namespace THLT.SplineMeshGeneration.Scripts.Commands
         {
             if(_spline.IsSplineClosed) return;
             var ray = HandleUtility.GUIPointToWorldRay(_position);
-            if (!Physics.Raycast(ray, out var hit)) return;
-            var point = hit.point;
+            var point = Physics.Raycast(ray, out var hit,_spline.CastMaxDistance) ? hit.point : ray.GetPoint(_spline.CastMaxDistance);
             if (_spline.Knots.Count > 0)
             {
                 if ((hit.point - _spline.Knots[0].knotCenter.position).magnitude <= _spline.KnotMaxDistance)

@@ -24,6 +24,7 @@ namespace THLT.SplineMeshGeneration.Scripts
         bool CanDrawSpline{get;set;}
         bool CanDrawPoints{get;set;}
         float KnotMaxDistance { get; set; }
+        float  CastMaxDistance { get; set; }
         public Texture2D HandleTexture {get;set; }
 
         public Texture2D KnotCenterTexture {get;set;}
