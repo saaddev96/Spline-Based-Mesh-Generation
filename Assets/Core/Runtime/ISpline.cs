@@ -18,6 +18,7 @@ namespace THLT.SplineMeshGeneration.Scripts
         Vector2 Scale { get; set; }
         Vector2 Tiling { get; set; }
         Spline Root{ get;}
+        MeshCollider SplineMeshCollider { get; set; }
         int Segments{ get; set; }
         float Length { get; set; }
         bool IsSplineClosed { get; }

@@ -132,6 +132,7 @@ namespace THLT.SplineMeshGeneration.Scripts
             get=>mesh;
             set=>mesh = value;
         }
+        public MeshCollider SplineMeshCollider { get; set; }
         public List<Material> MeshMaterials => meshMaterials;
 
         public Texture2D HandleTexture

@@ -40,6 +40,11 @@ namespace THLT.SplineMeshGeneration.Scripts
                     name = "Spline Mesh"
                 };
                 mesh.MarkDynamic();
+                if (!root.TryGetComponent<MeshCollider>(out _))
+                {
+                    SplineMeshCollider= root.gameObject.AddComponent<MeshCollider>();
+                    SplineMeshCollider.sharedMesh = mesh;
+                }
             }
 
             if (meshRenderer == null)
@@ -157,7 +162,20 @@ namespace THLT.SplineMeshGeneration.Scripts
         public override void Sample()
         {
             BezierSplineToughDataSimpling.Sample(this);
-            GenerateMesh();
+            var generatedMesh = GenerateMesh();
+            if (SplineMeshCollider != null)
+            {
+                SplineMeshCollider.sharedMesh = generatedMesh; 
+            } 
+            else if (!root.gameObject.TryGetComponent<MeshCollider>(out var col))
+            {
+                SplineMeshCollider = root.gameObject.AddComponent<MeshCollider>();
+                SplineMeshCollider.sharedMesh = generatedMesh; 
+            }
+            else
+            {
+                col.sharedMesh = generatedMesh;
+            }
         }
         public override void UpdateSelectedHandlesPos(Event e)
         {
@@ -177,8 +195,7 @@ namespace THLT.SplineMeshGeneration.Scripts
                         selectedHandle.localPosition);
                 }
             }
-            BezierSplineToughDataSimpling.Sample(this);
-            GenerateMesh();
+            Sample();
             SelectedCurrentPos = selectedHandle.position;
             SelectedCurrentRot = selectedHandle.rotation;
 

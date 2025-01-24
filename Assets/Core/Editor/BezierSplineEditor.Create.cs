@@ -283,7 +283,7 @@ namespace THLT.SplineMeshGeneration.Scripts.Editor
             if (mesh is { vertexCount: 0 }) return;
             SplinesData.ChangeActiveSpline(null);
             var meshObject = targetSpline.gameObject;
-            meshObject.AddComponent<MeshCollider>().sharedMesh = mesh;
+           // meshObject.AddComponent<MeshCollider>().sharedMesh = mesh;
             foreach (var k in targetSpline.MSpline.Knots)
             {
                     k.DestroyObjects();
