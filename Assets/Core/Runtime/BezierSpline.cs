@@ -145,9 +145,10 @@ namespace THLT.SplineMeshGeneration.Scripts
         {
             if(!(Knots.Count>0)) return;
             if(e is null) throw new NullReferenceException("input Event is null");
-            var ray = HandleUtility.GUIPointToWorldRay(e.mousePosition);
-            var point = Physics.Raycast(ray, out RaycastHit hit,CastMaxDistance) ? hit.point : ray.GetPoint(CastMaxDistance);
             var knt = Knots[^1];
+            var ray = HandleUtility.GUIPointToWorldRay(e.mousePosition);
+            var distance = Vector3.Distance(ray.origin, knt.knotCenter.position);
+            var point = Physics.Raycast(ray, out RaycastHit hit,distance) ? hit.point : ray.GetPoint(distance);
             Selection.activeTransform = knt.rightHandle;
             knt.rightHandle.position = point;
             Sample();
