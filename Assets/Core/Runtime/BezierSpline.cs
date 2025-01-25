@@ -162,19 +162,25 @@ namespace THLT.SplineMeshGeneration.Scripts
         public override void Sample()
         {
             BezierSplineToughDataSimpling.Sample(this);
-            var generatedMesh = GenerateMesh();
+            GenerateMesh();
+            UpdateMeshCollider();
+        }
+
+        public override void UpdateMeshCollider()
+        {
+            if(root == null) return;
             if (SplineMeshCollider != null)
             {
-                SplineMeshCollider.sharedMesh = generatedMesh; 
+                SplineMeshCollider.sharedMesh = mesh; 
             } 
             else if (!root.gameObject.TryGetComponent<MeshCollider>(out var col))
             {
-                SplineMeshCollider = root.gameObject.AddComponent<MeshCollider>();
-                SplineMeshCollider.sharedMesh = generatedMesh; 
+                SplineMeshCollider = Root.gameObject.AddComponent<MeshCollider>();
+                SplineMeshCollider.sharedMesh = mesh; 
             }
             else
             {
-                col.sharedMesh = generatedMesh;
+                col.sharedMesh = mesh;
             }
         }
         public override void UpdateSelectedHandlesPos(Event e)

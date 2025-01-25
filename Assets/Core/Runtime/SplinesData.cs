@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
@@ -20,31 +21,37 @@ namespace THLT.SplineMeshGeneration.Scripts
         public static Spline ActiveSpline { get; set; }
         public static int PreviousSplineIndex { get; private set; }
 
+        public static event Action OnSplinesLoaded;
         static SplinesData()
         {
             EditorApplication.playModeStateChanged += OnPlayModeStateChanged;
+           
         } 
        
         private static void OnPlayModeStateChanged(PlayModeStateChange state)
         {
-            LoadSplines();
+            if (state == PlayModeStateChange.EnteredEditMode)
+            {
+                LoadSplines();
+                OnSplinesLoaded?.Invoke();
+            }
+            
         }
         
         public static void LoadSplines()
         { 
-            Debug.Log("Load Splines");
             Splines = Object.FindObjectsByType<Spline>(FindObjectsSortMode.None).OrderBy(x => x.gameObject.name).ToList();
             if (Splines.Count > 0)
             {
                 SampleAllSplines();
                 ChangeActiveSpline(Splines[0]);
-            
             }
             else
             {
                 ChangeActiveSpline(null); 
             }
         }
+
         static void SampleAllSplines()
         {
             foreach (var spline in Splines)

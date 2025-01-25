@@ -38,6 +38,7 @@ namespace THLT.SplineMeshGeneration.Scripts
         void ChangeMaterial(int index, Material newMat);
         void CreateKnot(Vector2 mousePos);
         void Sample();
+        void UpdateMeshCollider();
         BezierKnot KnotConstructor(string name, Transform parent, Vector3 pointCenter, Texture2D handleIcon, Texture2D knotCenterIcon);
         void UpdateCreatedHandlesPos(Event e);
         void UpdateSelectedHandlesPos(Event e);

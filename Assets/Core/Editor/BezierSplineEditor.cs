@@ -45,7 +45,7 @@ namespace THLT.SplineMeshGeneration.Scripts.Editor
             SplinesData.LoadSplines();
             InitializeUIElements();
             PopulateTreeView();
-        
+            SplinesData.OnSplinesLoaded += RefreshTreeView;
         }
 
     

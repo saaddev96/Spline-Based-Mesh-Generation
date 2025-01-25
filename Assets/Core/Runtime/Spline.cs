@@ -27,6 +27,7 @@ namespace THLT.SplineMeshGeneration.Scripts
 
         public void CreateKnot(Vector2  mousePos)=>spline?.CreateKnot(mousePos);
         public void Sample()=>spline?.Sample();
+        public void UpdateMeshCollider() => spline?.UpdateMeshCollider();
         public void UpdateCreatedHandlesPos(Event e)=>spline?.UpdateCreatedHandlesPos(e);
 
         public void UpdateSelectedHandlesPos(Event e)=>spline?.UpdateSelectedHandlesPos(e);
