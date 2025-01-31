@@ -41,15 +41,17 @@ namespace THLT.SplineMeshGeneration.Scripts
         public static void LoadSplines()
         { 
             Splines = Object.FindObjectsByType<Spline>(FindObjectsSortMode.None).OrderBy(x => x.gameObject.name).ToList();
-            if (Splines.Count > 0)
-            {
-                SampleAllSplines();
-                ChangeActiveSpline(Splines[0]);
-            }
-            else
-            {
-                ChangeActiveSpline(null); 
-            }
+            SampleAllSplines();
+            ChangeActiveSpline(null);
+            // if (Splines.Count > 0)
+            // {
+            //     SampleAllSplines();
+            //     ChangeActiveSpline(Splines[0]);
+            // }
+            // else
+            // {
+            //     ChangeActiveSpline(null); 
+            // }
         }
 
         static void SampleAllSplines()
@@ -57,6 +59,7 @@ namespace THLT.SplineMeshGeneration.Scripts
             foreach (var spline in Splines)
             {
                 spline.Sample();
+                spline.OnDeactive();
             }
         }
         public static void ChangeActiveSpline(Spline newSpline)
